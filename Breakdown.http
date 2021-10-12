@@ -1,0 +1,28 @@
+###
+
+POST localhost/api/breakdown
+Content-Type: application/json
+Accept: application/json
+
+{
+    "t1": "2021-01-01T00:00:00+00:00",
+    "t2": "2022-01-01T00:00:00+00:00",
+    "expressions": [
+        "m",
+        "d",
+        "h",
+        "i",
+        "s",
+        "2m",
+        "3d",
+        "10h",
+        "100i",
+        "10000s"
+    ]
+}
+
+###
+
+GET localhost/api/breakdown/2021-01-01T00:00:00+00:00/2022-01-01T00:00:00+00:00
+Content-Type: application/json
+Accept: application/json
